@@ -1,13 +1,12 @@
+var mongoose = require("mongoose");
 
-var mongoose = require('mongoose');  
-
-var OrderSchema = new mongoose.Schema({  
-  customer: String,
-  date: Date,
-  isDelivered: Boolean,
-  value: Number
+var OrderSchema = new mongoose.Schema({
+  Customer: String,
+  Date: Date,
+  IsDelivered: Boolean,
+  Value: Number
 });
 
-mongoose.model('Order', OrderSchema);
+mongoose.model("Order", OrderSchema);
 
-module.exports = mongoose.model('Order');
+module.exports = mongoose.model("Order");
